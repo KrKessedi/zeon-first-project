@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Zeon First Project</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/adaptive.css" />
 	</head>
@@ -12,11 +12,11 @@
 		<!-- navbar start  -->
 		<nav class="navbar">
 			<div class="navbar__content">
-				<h2 class="navbar__logo">Лого</h2>
+				<a href="./index.html"><h2 class="navbar__logo">Лого</h2></a>
 				<div class="navbar__content-right">
 					<ul class="navbar__list">
 						<li class="navbar__item">
-							О нас
+							<a class="navbar__item" href="./index2.html">О нас</a>
 							<img
 								src="./img/Arrow-Right2.svg"
 								class="navbar__item-arrow"
@@ -44,13 +44,24 @@
 					</ul>
 					<div class="navbar__lang">
 						<p class="navbar__text">Язык:</p>
-						<img src="./img/KG.svg" style="margin-right: 5px" alt="KG" />
-						<img src="./img/RU.svg" alt="RU" />
+						<div class="navbar__flag">
+							<img
+								src="./img/Kg.svg"
+								style="margin-right: 0.7vw"
+								class="flag"
+								alt="KG"
+							/>
+							<img
+								src="./img/twemoji_flag-for-flag-russia.svg"
+								class="flag"
+								alt="RU"
+							/>
+						</div>
 					</div>
 					<details>
 						<summary></summary>
 						<div class="menu">
-							<a href="./index.html">О нас</a>
+							<a href="#">О нас</a>
 							<a href="#">Наша миссия</a>
 							<a href="#">Контакты</a>
 						</div>
@@ -79,7 +90,7 @@
 					<div class="header__content-left">
 						<h3 class="header__title">Теплосети</h3>
 						<p class="header__text">Тепло в каждый уголок нашей страны</p>
-						<button class="header__btn">Подробнее о нас</button>
+						<a href="./index2.html" class="header__btn">Подробнее о нас</a>
 					</div>
 
 					<img class="header__img" src="./img/Header.png" alt="header" />
@@ -91,7 +102,7 @@
 				/>
 				<div class="header__radio">
 					<div class="header__radio__list">
-						<input type="radio" name="radio" />
+						<input type="radio" name="radio" checked />
 						<input type="radio" name="radio" />
 						<input type="radio" name="radio" />
 						<input type="radio" name="radio" />
