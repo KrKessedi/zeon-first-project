@@ -93,31 +93,6 @@ a {
 	font-size: 14px;
 }
 
-/* navbar end  */
-
-/* burger menu start  */
-/* .burger-menu__icon {
-	display: none;
-}
-.burger-menu {
-	position: absolute;
-	right: 10px;
-	width: 20vw;
-	background-color: #e8e8e8;
-}
-
-.burger-menu__close {
-	display: flex;
-	justify-content: flex-end;
-	padding: 5px;
-} */
-
-/* :root {
-	--primColor: #dcdcdc;
-	--secoColor: #555555;
-	--cornerRad: 4px;
-} */
-
 details {
 	position: absolute;
 	right: 30px;
@@ -197,6 +172,7 @@ details[open] summary::after {
 	text-decoration: none;
 	text-align: center;
 	transition: filter 200ms linear 0s;
+	z-index: 10;
 }
 .menu a:nth-of-type(1) {
 	padding-top: 24px;
@@ -207,17 +183,7 @@ details[open] summary::after {
 .menu a:hover {
 	filter: brightness(200%);
 }
-/* details::before {
-	content: '← Click This Button';
-	color: var(--secoColor);
-	position: absolute;
-	margin-left: 80px;
-	padding: 10px 10px;
-	opacity: 0.4;
-}
-details[open]::before {
-	animation: fadeMe 300ms linear forwards;
-} */
+
 @keyframes menuAnim {
 	0% {
 		height: 0;
@@ -674,6 +640,7 @@ footer {
 	line-height: 16px;
 	color: white;
 	letter-spacing: 0.02em;
+	cursor: pointer;
 }
 
 .footer-info__contacts__number-item {
@@ -721,6 +688,7 @@ footer {
 	font-size: 13px;
 	line-height: 16px;
 	color: white;
+	cursor: pointer;
 }
 
 .footer-info__location {
